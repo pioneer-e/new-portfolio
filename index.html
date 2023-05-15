@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹퍼블리셔 윤가연</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer codingppushu" />
+    <meta name="author" content="codingppushu" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script src="https://kit.fontawesome.com/02f51af978.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar-logo">
+        <a href="#"><img src="imgs/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-menu-item active" data-link="#home">Home</li>
+        <li class="navbar-menu-item" data-link="#about">About</li>
+        <li class="navbar-menu-item" data-link="#skills">Skills</li>
+        <li class="navbar-menu-item" data-link="#work">My work</li>
+        <li class="navbar-menu-item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar-toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home-container">
+        <img src="imgs/avatar.jpg" alt="codingPpushu's profile photo" class="home-avatar" />
+        <p class="home-title">안녕하세요.</p>
+        <p class="home-description">웹퍼블리셔 윤가연입니다. :)</p>
+        <div class="home-intro">
+          <a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-container">
+      <h1>About me.</h1>
+      <p>
+        웹 퍼블리싱에 대한 다수 경험이 있고, 단독 신규 앱 프로젝트를 진행한 적이 있습니다.<br />
+        그리고 팀 환경에서 일할 수 있는 적응력을 갖추고 있습니다!
+      </p>
+
+      <div class="about-jobs">
+        <div class="job">
+          <img class="job-img" src="imgs/jobs/job3.png" alt="아주세계여행사" class="job-logo" />
+          <div class="job-description">
+            <p class="job-name">아주세계여행사 (ajuworld) / 웹퍼블리셔 - 팀원</p>
+            <p class="job-period">2019.10 ~ 2020.09</p>
+          </div>
+        </div>
+        <div class="job">
+          <img class="job-img" src="imgs/jobs/job2.png" alt="한국코퍼레이션" class="job-logo" />
+          <div class="job-description">
+            <p class="job-name">한국코퍼레이션 / 서비스 - 팀원/파트장</p>
+            <p class="job-period">2016.10 ~ 2019.09</p>
+          </div>
+        </div>
+        <div class="job">
+          <img class="job-img" src="imgs/jobs/job1.jpg" alt="KnWorks" class="job-logo" />
+          <div class="job-description">
+            <p class="job-name">KnWorks / 서비스 - 팀원</p>
+            <p class="job-period">2013.04 ~ 2015.10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-container">
+        <h1>Publishing Skill.</h1>
+
+        <div class="skill">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h2 class="skill-title">HTML, CSS</h2>
+            <div class="skill-description"></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h2 class="skill-title">JAVASCRIPT, JQUERY</h2>
+            <div class="skill-description"></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa fa-clone" aria-hidden="true"></i></div>
+            <h2 class="skill-title">RESPONSIVE WEB</h2>
+            <div class="skill-description"></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa fa-bold" aria-hidden="true"></i></div>
+            <h2 class="skill-title">BOOTSTRAP</h2>
+            <div class="skill-description"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section-container">
+        <h1>Works & Project.</h1>
+        <div class="work-categories">
+          <button class="category-btn selected" data-filter="*">All<span class="category-count">6</span></button>
+          <button class="category-btn" data-filter="web">Web<span class="category-count">3</span></button>
+          <button class="category-btn" data-filter="mobile">Mobile<span class="category-count">1</span></button>
+          <button class="category-btn" data-filter="responsive">Responsive<span class="category-count">2</span></button>
+        </div>
+        <div class="work-projects">
+          <a
+            class="project"
+            href="https://play.google.com/store/apps/details?id=com.tfavor.fillma.b2c"
+            target="_blank"
+            data-type="mobile"
+          >
+            <img class="project-img" src="imgs/projects/tfavor-project.JPG" alt="Tfavor Project" />
+            <div class="project-description">
+              <h3>Tfavor App</h3>
+              <span>HTML, CSS with JavaScript (Mobile)</span>
+            </div>
+          </a>
+          <a class="project" href="https://codingppushu-dior-clone.netlify.app/" target="_blank" data-type="responsive">
+            <img class="project-img" src="imgs/projects/dior-clone.jpg" alt="Dior" />
+            <div class="project-description">
+              <h3>Dior Site</h3>
+              <span>Clone Website (PC, Mobile)</span>
+            </div>
+          </a>
+          <a class="project" href="https://codingppushu-guess-game.netlify.app/" target="_blank" data-type="web">
+            <img class="project-img" src="imgs/projects/guess-game.jpg" alt="guess game" />
+            <div class="project-description">
+              <h3>Guess-Game</h3>
+              <span>HTML, CSS with JavaScript (PC)</span>
+            </div>
+          </a>
+          <a
+            class="project"
+            href="https://app.netlify.com/sites/todo-make-project/settings/general"
+            target="_blank"
+            data-type="web"
+          >
+            <img class="project-img" src="imgs/projects/todolist-web.png" alt="todo list" />
+            <div class="project-description">
+              <h3>ToDo-List</h3>
+              <span>HTML, CSS with JavaScript (PC)</span>
+            </div>
+          </a>
+          <a
+            class="project"
+            href="https://codingppushu-spotify-main-clone.netlify.app/"
+            target="_blank"
+            data-type="web"
+          >
+            <img class="project-img" src="imgs/projects/spotify-clone.png" alt="Spotify" />
+            <div class="project-description">
+              <h3>Spotify Site</h3>
+              <span>Clone Website (PC)</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact-title">Let's talk</h1>
+      <h2 class="contact-email">codingppushu@gmail.com</h2>
+      <div class="contact-links">
+        <a href="https://github.com/pioneer-e" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://codingppushu.github.io/" target="_blank"><i class="fab fa-blogger"></i></a>
+      </div>
+      <p class="contact-rights">CodingPpushu - All rights reserved</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
